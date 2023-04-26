@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Gpt3-figma/static/css/main.037a0fec.css",
+    "main.css": "/Gpt3-figma/static/css/main.cddb3b78.css",
     "main.js": "/Gpt3-figma/static/js/main.829d04ef.js",
     "static/media/ai.png": "/Gpt3-figma/static/media/ai.aa60586ba1ba53762d94.png",
     "static/media/possibility.png": "/Gpt3-figma/static/media/possibility.525f13b61a2157d44de0.png",
@@ -12,11 +12,11 @@
     "static/media/people.png": "/Gpt3-figma/static/media/people.5cd2d6fbcd48bd63f106.png",
     "static/media/logo.svg": "/Gpt3-figma/static/media/logo.5114679faa0cce74946769ded97f1c89.svg",
     "index.html": "/Gpt3-figma/index.html",
-    "main.037a0fec.css.map": "/Gpt3-figma/static/css/main.037a0fec.css.map",
+    "main.cddb3b78.css.map": "/Gpt3-figma/static/css/main.cddb3b78.css.map",
     "main.829d04ef.js.map": "/Gpt3-figma/static/js/main.829d04ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.037a0fec.css",
+    "static/css/main.cddb3b78.css",
     "static/js/main.829d04ef.js"
   ]
 }
