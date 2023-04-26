@@ -1,0 +1,109 @@
+* {
+    padding        : 0;
+    margin         : 0;
+    box-sizing     : border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--color-bg);
+}
+a {
+    text-decoration: none;
+    outline        : none;
+}
+
+/* background with angrytool.com */
+.gradient_bg {
+    background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+}
+
+.gradient_text {
+    background             : var(--gradient-text);
+    background-clip        : text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section_padding {
+    padding: 2rem 6rem;
+}
+
+.section_margin {
+    margin: 2rem 6rem;
+}
+
+/* responsive */
+@media screen and (max-width: 900px) {
+    .section_padding {
+        padding: 2rem 4rem;
+    }
+
+    .section_margin {
+        margin: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .section_padding {
+        padding: 2rem;
+    }
+
+    .section_margin {
+        margin: 2rem;
+    }
+}
+
+/* animaions from https://animista.net/play/basic/scale-up*/
+.scale-up-tr {
+	-webkit-animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-tr 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+ @-webkit-keyframes scale-up-tr {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+  @keyframes scale-up-tr {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 100% 0%;
+              transform-origin: 100% 0%;
+    }
+  }
+/* hover effects */
+.underline_hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+.underline_hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

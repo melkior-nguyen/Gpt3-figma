@@ -1,0 +1,124 @@
+.gototop_btn {
+    position        : fixed;
+    bottom          : 1rem;
+    right           : 1rem;
+    background-color: var(--color-bg);
+    border          : 1px solid #fff;
+    padding         : 4px;
+    border-radius   : 4px;
+    filter          : brightness(0.8);
+    box-shadow      : 0 0 4px rgba(255, 255, 255, 0.5);
+    z-index         : 1;
+}
+
+.gototop_btn a {
+    color      : var(--color-subtext);
+    font-weight: 500;
+    font-size  : 12px;
+}
+
+.gototop_btn:hover {
+    filter: brightness(1);
+}
+
+.footer {
+    width           : 100%;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    flex-direction  : column;
+    background-color: var(--color-footer);
+}
+
+.footer_heading {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin-bottom  : 5rem;
+}
+
+.footer_heading h1 {
+    font-family   : var(--font-family);
+    font-weight   : 800;
+    font-size     : 62px;
+    line-height   : 75px;
+    text-align    : center;
+    letter-spacing: -0.04em;
+}
+
+.footer_btn {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    padding        : 1rem;
+    border         : 1px solid #fff;
+    text-align     : center;
+    cursor         : pointer;
+    margin-bottom  : 5rem
+}
+
+.footer_btn p {
+    font-size   : 18px;
+    font-family : var(--font-family);
+    line-height : 21px;
+    color       : #fff;
+    word-spacing: 2px;
+}
+
+.footer_links {
+    width          : 100%;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : flex-start;
+    text-align     : left;
+    margin-bottom  : 10rem;
+}
+
+.footer_links-div {
+    width  : 25%;
+    padding: 2rem;
+}
+
+.footer_links-div img {
+    width : 118px;
+    height: 30px;
+}
+
+.footer_links-div img,
+.footer_links-div h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer_links-div p {
+    font-family: var(--font-family);
+    font-size  : 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 1080px) {
+    .footer_heading h1{
+        font-size:52px ;
+    }
+}
+@media screen and (max-width: 900px) {
+    .footer_heading h1{
+        font-size:46px ;   
+    }
+    .footer_btn p {
+        font-size: 16px;
+    }
+    .footer_links {
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (max-width: 740px) {
+    .footer_heading h1{
+        font-size:32px ;
+    }
+    .footer_btn p {
+        font-size: 12px;
+    }
+}
